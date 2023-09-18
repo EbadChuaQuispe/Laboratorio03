@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet"/>
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <div class="profile-container">
+        <img class="profile-image" src="ebad.chua.jpg" alt="Imagen de Perfil">
+        <h1 class="profile-name">Ebad Chua Quispe</h1>
+        <button class="btn" onclick="Perfil()">Ver Perfil</button>
+        <button class="btn" onclick="Biografia()">Ver Biografía</button>
+        <button class="btn" onclick="InformacionPersonal()">Ver Información Personal</button>
+        <button class="btn" onclick="Idiomas()">Ver  Idiomas aprendidos</button>
+    </div>
+
+    <script>
+        function Perfil() {
+            const imagenCompletaURL = "ebad.chua.jpg";
+            window.open(imagenCompletaURL, "_blank");
+        }
+
+        function Biografia() {
+            alert("Biografía del usuario: Hola,Mi nombre es Ebad, tengo 22 años y vivo solo. Trabajo durante el día y estudio por las tardes en la carrera de Diseño y Desarrollo de Software en TECSUP. Me apasiona la tecnología y me encanta aprender sobre nuevas tecnologías y tendencias. En mi tiempo libre, disfruto viendo series en diferentes plataformas de streaming y asistiendo a fiestas. También soy un entusiasta de la lectura, especialmente de obras de alta fantasía y literatura fantástica. Estoy interesado en la Inteligencia Artificial y estoy aprendiendo varios lenguajes de programación y algoritmos para mejorar mis habilidades en tecnología. ¡Gracias por visitar mi perfil!");
+        }
+
+        function InformacionPersonal() {
+            alert("Información Personal del usuario: Nombre: Ebad Chua Quispe\nEdad: 22 años\nOcupación: Estudiante y Trabajador\nIntereses: Tecnología, series, fiestas, lectura, Inteligencia Artificial");
+        }
+
+        function Idiomas() {
+            alert("Idiomas del usuario: Español (dominio), Inglés (en aprendizaje), Ruso (en aprendizaje), Japonés (en aprendizaje)");
+        }
+    </script>
+</body>
+</html>
